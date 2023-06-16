@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class=" text-center">Pelis</h1>
+    <div class="row">
+
+        <div *ngFor="let cock of myCocktail" class="col-4 g-4">
+            <div class="card">
+                <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{cock.strDrink}}</h5>
+                    <p class="card-text">{{cock.strInstructions}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button type="button" class="btn btn-primary" [routerLink]="'/admin'">Ir a administrar cocktails</button>
+    <button type="button" class="btn btn-success" [routerLink]="'..'">Volver a menu</button>
+</div>
+

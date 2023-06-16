@@ -1,0 +1,17 @@
+<div class="container text-center">
+    <h1 class=" bg-success-subtle text-emphasis-success">Productos a elegir del menú del día</h1>
+    <ul class="list-group">
+        <li *ngFor="let item of arrMenu" class="list-group-item">
+            <h3>{{ item.nombre }}</h3>
+            <p>Ingredientes: {{ item.ingredientes }}</p>
+            <p>Precio: {{ item.precio }}</p>
+        </li>
+     </ul>
+
+    
+
+    <button type="button" class="btn btn-primary" [routerLink]="'/admin'">Ir a administrar cocktails</button>
+    <button type="button" class="btn btn-success" [routerLink]="'/page-cocktails'">Ir a ver los cocktails</button>
+
+</div>
+
